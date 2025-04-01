@@ -1,0 +1,12 @@
+[
+	{
+		"ID": "Ros2008",
+		"Composer": "Rossi, Salamone",
+		"Title": "Hashirim asher lishlomo",
+		"Subtitle": "Èlohim, hashivenu",
+		"Genre": "sacred work",
+		"Voices": "4",
+		"Humdrum URL": "https://github.com/benory/Rossi-scores/tree/main/humdrum/Ros2008-Elohim_hashivenu.krn",
+		"FILEBASE": "Ros2008-Elohim_hashivenu"
+	}
+]

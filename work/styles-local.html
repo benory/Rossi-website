@@ -1,0 +1,197 @@
+<style>
+
+{% include styles/score.css %}
+
+* { cursor: inherit; }
+
+body.wait {
+	cursor: wait !important;
+}
+
+main {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.page-content {
+	min-width: 500px;
+}
+
+#work-info {
+	font-size: 1.1rem;
+	width: 100%;
+	border: none;
+}
+
+#work-info th {
+	display: none;
+}
+
+#work-info td, #work-info th {
+	border: none; /* Remove borders from table cells */
+}
+
+.work-item {
+	text-indent: -2em;
+	padding-left: 2em;
+	display: block;
+}
+
+.work-item:before {
+	content: "\00a0";
+}
+
+#work-info tbody {
+  vertical-align: top;
+}
+
+#work-info td:nth-child(1) {
+	width: 400px;
+} 
+
+#work-info td:nth-child(2) {
+	min-width: 150px;
+}
+
+table#work-info {
+  table-layout: fixed;
+}
+
+#work-footer {
+	max-height: 100px;
+	font-size: 1.25rem;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 25%;
+	flex-direction: column;
+}
+
+.work-item .key {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.work-item .key:after {
+	content: ":";
+	padding-right: 10px;
+}
+  
+.work-item {
+	margin-bottom: 2px;
+}
+
+.info-link {
+	font-size: small;
+	opacity: 0.5;
+}
+
+.button, .analysis-toggle.button {
+	background: #ffffff;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 5px;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 4px; 
+}
+
+.button:hover, .analysis-toggle.button:hover {
+	background: #eeeeee;
+}
+
+.hidden {
+	display: none !important;
+	background: red !important;
+}
+
+.analysis-toggle.active {
+	background: #c8c8c8;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+[id$="-display"] svg {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+#analysis-plots {
+	text-align: center;
+}
+
+#accidentalSelect .button {
+	min-width: 192px;
+	text-align: center;
+}
+
+.analysis-plot {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	min-width: 500px;
+	width: 60%;
+}
+
+.play, .mp3play {
+	display: inline-block;
+	text-indent: -19999px;
+	background: url('/images/mp3.svg') no-repeat 0 0;
+	width: 56px;
+	height: 40px;
+	margin-left: 15px;
+	position: relative;
+	top: 3px;
+}
+
+
+.pause, .mp3pause {
+	display: inline-block;
+	text-indent: -19999px;
+	background: url('/images/mp3-pause.svg') no-repeat 0 0;
+	width: 56px;
+	height: 40px;
+	margin-left: 15px;
+	position: relative;
+	top: 3px;
+}
+
+
+audio {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1;
+
+}
+
+
+#audiobutton-container {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.bibliographic-entry:first-of-type {
+    display: inline; /* Keeps entries on the same line */
+    text-indent: 0; /* Resets indent so it's not affected by .work-item */
+    padding-left: 0; /* Ensures alignment remains correct */
+}
+
+.bibliographic-entry:nth-of-type(n+2) {
+    text-indent: -4em; /* Ensures the second citation starts on a new line, indented once from "Modern Editions:" */
+    margin-left: -1.8em; /* Moves the start of the second citation one level deeper */
+    padding-left: 0em; /* Indents wrapped lines twice from "Modern Editions:" */
+}
+
+</style>
+
+
+
