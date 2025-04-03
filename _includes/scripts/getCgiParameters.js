@@ -3,7 +3,7 @@
 /////////////////////////////
 //
 // getCgiParameters -- Extract the CGI parameters from the URL of the page.
-//     id = File ID for the work to display, such as Jac2001.
+//     id = File ID for the work to display, such as Ros2008.
 //
 
 function getCgiParameters() {
